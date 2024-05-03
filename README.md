@@ -7,7 +7,6 @@ The backend is written in Rust. Running the project launches a REST API that can
 The backend can be run in a Docker container. It can be be deployed to any cloud architecture that supports containers, it is expected that it will be run behind a reverse proxy that provides e.g. HTTPS.
 
 ```
-$ cd backend
 $ docker build -t allocation-backend
 $ docker run -v ./dataClaim:/app/raw_input -p 8080:8080 allocation-backend
 ```
